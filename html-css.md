@@ -12,32 +12,32 @@ Q1. HTML Skeleton
 
 The HTML boilerplate defines the structure of a webpage.
 
-- "<!DOCTYPE html>" → Declares HTML5 and ensures proper rendering
-- "<html>" → Root element of the page
-- "<head>" → Contains metadata (not visible)
-- "<body>" → Contains visible content
+- <!DOCTYPE html>→ Declares HTML5 and ensures proper rendering
+- <html> → Root element of the page
+- <head> → Contains metadata (not visible)
+- <body>→ Contains visible content
 
-If "<!DOCTYPE html>" is removed, the browser may enter quirks mode, causing layout inconsistencies.
+If <!DOCTYPE html> is removed, the browser may enter quirks mode, causing layout inconsistencies.
 
 ---
 
-Q2. "<head>" vs "<body>"
+Q2. <head> vs <body>
 
-Elements in "<head>":
+Elements in <head>:
 
-- "<title>"
-- "<meta>"
-- "<link>"
-- "<style>"
-- "<script>"
+- <title>
+- <meta>
+- <link>
+- <style>
+- <script>
 
-Elements in "<body>":
+Elements in <body>:
 
-- "<div>"
-- "<p>"
-- "<h1>"
-- "<img>"
-- "<a>"
+- <div>
+- <p>
+- <h1>
+- <img>
+- <a>
 
 Rule:
 Head = metadata (not displayed)
@@ -51,12 +51,12 @@ Block Elements:
 
 - Take full width
 - Start on a new line
-  Examples: "<div>", "<p>", "<h1>"
+  Examples: <div>, <p>, <h1>
 
 Inline Elements:
 
 - Take only necessary width
-  Examples: "<span>", "<a>", "<img>"
+  Examples: <span>, <a>, <img>
 
 ---
 
@@ -96,7 +96,7 @@ SECTION B: SEMANTIC HTML
 
 Q6. Semantic HTML
 
-Semantic HTML uses meaningful tags like "<header>" instead of generic "<div>".
+Semantic HTML uses meaningful tags like <header> instead of generic <div>.
 
 They are not visually different but improve:
 
@@ -108,21 +108,21 @@ They are not visually different but improve:
 
 Q7. Sectioning Elements
 
-- "<header>" → top section
-- "<nav>" → navigation
-- "<main>" → main content
-- "<section>" → grouped content
-- "<article>" → standalone content
-- "<aside>" → sidebar
-- "<footer>" → bottom section
+- <header> → top section
+- <nav> → navigation
+- <main> → main content
+- <section> → grouped content
+- <article> → standalone content
+- <aside> → sidebar
+- <footer> → bottom section
 
 ---
 
-Q8. "<section>" vs "<article>" vs "<div>"
+Q8. <section> vs  <article> vs <div>
 
-- "<section>" → related grouped content
-- "<article>" → independent content (blog post, news)
-- "<div>" → used when no semantic meaning applies
+- <section>n→ related grouped content
+- <article>  → independent content (blog post, news)
+- <div> → used when no semantic meaning applies
 
 ---
 
@@ -146,9 +146,9 @@ Skipping levels harms SEO and accessibility.
 
 Q10. Lists
 
-- "<ul>" → unordered list
-- "<ol>" → ordered list
-- "<dl>" → description list
+- <ul> → unordered list
+- <ol> → ordered list
+- <dl> → description list
 
 Lists should not be used purely for layout or indentation.
 
