@@ -12,32 +12,32 @@ Q1. HTML Skeleton
 
 The HTML boilerplate defines the structure of a webpage.
 
-- <!DOCTYPE html>→ Declares HTML5 and ensures proper rendering
-- <html> → Root element of the page
-- <head> → Contains metadata (not visible)
-- <body>→ Contains visible content
+ !DOCTYPE html→ Declares HTML5 and ensures proper rendering
+- html → Root element of the page
+- head → Contains metadata (not visible)
+- body→ Contains visible content
 
-If <!DOCTYPE html> is removed, the browser may enter quirks mode, causing layout inconsistencies.
+If !DOCTYPE html is removed, the browser may enter quirks mode, causing layout inconsistencies.
 
 ---
 
-Q2. <head> vs <body>
+Q2. head vs body
 
-Elements in <head>:
+Elements in head:
 
-- <title>
-- <meta>
-- <link>
-- <style>
-- <script>
+- title
+- meta
+- link
+- style
+- script
 
-Elements in <body>:
+Elements in body:
 
-- <div>
-- <p>
-- <h1>
-- <img>
-- <a>
+- div
+- p
+- h1
+- img
+- a
 
 Rule:
 Head = metadata (not displayed)
