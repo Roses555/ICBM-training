@@ -1,0 +1,134 @@
+/* ✅ RESET + BOX MODEL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #111;
+  color: white;
+  flex-wrap: wrap; /* ✅ responsiveness */
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* ✅ prevents overflow */
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ================= HERO ================= */
+.hero {
+  min-height: 80vh; /* ✅ flexible height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #222, #444);
+  color: white;
+}
+
+/* ================= COLLECTION ================= */
+.collection {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* ✅ key for responsiveness */
+  justify-content: center;
+}
+
+.product-card {
+  flex: 1 1 200px; /* ✅ flexible sizing */
+  max-width: 250px;
+  padding: 40px;
+  background: #eee;
+  border-radius: 10px;
+}
+
+/* ================= ABOUT ================= */
+.about {
+  padding: 50px 20px;
+}
+
+.about-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ important */
+}
+
+.about-text,
+.about-image {
+  flex: 1 1 300px; /* ✅ flexible columns */
+}
+
+.about-image {
+  height: 200px;
+  background: #ccc;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%; /* ✅ responsive input */
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* ================= RESPONSIVE BREAKPOINT ================= */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column; /* ✅ stack header */
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .about-container {
+    flex-direction: column; /* ✅ stack sections */
+  }
+
+  .product-card {
+    flex: 1 1 100%; /* ✅ full width cards on mobile */
+  }
+}
