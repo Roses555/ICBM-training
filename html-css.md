@@ -12,32 +12,31 @@ Q1. HTML Skeleton
 
 The HTML boilerplate defines the structure of a webpage.
 
- !DOCTYPE html→ Declares HTML5 and ensures proper rendering
-- html → Root element of the page
-- head → Contains metadata (not visible)
-- body→ Contains visible content
+`< !DOCTYPE html>`→ Declares HTML5 and ensures proper rendering
+-`< html>` → Root element of the page
+- `<head>` → Contains metadata (not visible)
+- `<body>`→ Contains visible content
 
-If !DOCTYPE html is removed, the browser may enter quirks mode, causing layout inconsistencies.
+If `<!DOCTYPE>` html is removed, the browser may enter quirks mode, causing layout inconsistencies.
 
 ---
 
-Q2. head vs body
+Q2. `<head>` vs body
 
 Elements in head:
 
-- title
-- meta
-- link
-- style
-- script
-
+- `<title>`
+- `<meta>`
+-`< link>`
+- `<style>`
+- `<scripts>`
 Elements in body:
 
-- div
-- p
-- h1
-- img
-- a
+- `<div>`
+- `<p>`
+- `<h1>`
+- `<img>`
+- `<a>`
 
 Rule:
 Head = metadata (not displayed)
@@ -51,12 +50,12 @@ Block Elements:
 
 - Take full width
 - Start on a new line
-  Examples: <div>, <p>, <h1>
+  Examples: `<div>`, `<p>`, `<h1>`
 
 Inline Elements:
 
 - Take only necessary width
-  Examples: <span>, <a>, <img>
+  Examples: `<span>`, `<a>`, `<img>`
 
 ---
 
@@ -66,7 +65,7 @@ Attributes provide additional information about elements.
 
 Example:
 
-<img src="image.jpg" alt="A description">
+`<img src="image.jpg" alt="A description">`
 
 - Required: "src"
 - Optional: "alt" (but important)
@@ -79,11 +78,11 @@ Q5. Hyperlinks & Paths
 
 Absolute URL:
 
-<a href="https://example.com">Visit</a>
+`<a href="https://example.com">Visit</a>`
 
 Relative URL:
 
-<a href="about.html">About</a>
+`<a href="about.html">About</a>`
 
 Use:
 
@@ -96,7 +95,7 @@ SECTION B: SEMANTIC HTML
 
 Q6. Semantic HTML
 
-Semantic HTML uses meaningful tags like <header> instead of generic <div>.
+Semantic HTML uses meaningful tags like `<header>` instead of generic `<div>`.
 
 They are not visually different but improve:
 
@@ -108,21 +107,21 @@ They are not visually different but improve:
 
 Q7. Sectioning Elements
 
-- <header> → top section
-- <nav> → navigation
-- <main> → main content
-- <section> → grouped content
-- <article> → standalone content
-- <aside> → sidebar
-- <footer> → bottom section
+- `<header>` → top section
+- `<nav>` → navigation
+- `<main>` → main content
+- `<section>` → grouped content
+- `<article>` → standalone content
+- `<aside>` → sidebar
+- `<footer>` → bottom section
 
 ---
 
-Q8. <section> vs  <article> vs <div>
+Q8. `<section>` vs  `<article>` vs `<div>`
 
-- <section>n→ related grouped content
-- <article>  → independent content (blog post, news)
-- <div> → used when no semantic meaning applies
+- `<section>`→ related grouped content
+- `<article>`  → independent content (blog post, news)
+- `<div>` → used when no semantic meaning applies
 
 ---
 
@@ -130,15 +129,15 @@ Q9. Heading Hierarchy
 
 Incorrect:
 
-<h1>My Blog</h1>
-<h4>Latest Posts</h4>
-<h6>Post Title</h6>
+`<h1>My Blog</h1>`
+`<h4>Latest Posts</h4>`
+`<h6>Post Title</h6>`
 
 Correct:
 
-<h1>My Blog</h1>
-<h2>Latest Posts</h2>
-<h3>Post Title</h3>
+`<h1>My Blog</h1>`
+`<h2>Latest Posts</h2>`
+`<h3>Post Title</h3>`
 
 Skipping levels harms SEO and accessibility.
 
@@ -146,9 +145,9 @@ Skipping levels harms SEO and accessibility.
 
 Q10. Lists
 
-- <ul> → unordered list
-- <ol> → ordered list
-- <dl> → description list
+- `<ul>` → unordered list
+- `<ol>` → ordered list
+- `<dl>` → description list
 
 Lists should not be used purely for layout or indentation.
 
@@ -185,14 +184,14 @@ Q13. Labels & Accessibility
 
 Correct ways:
 
-<label for="name">Name</label>
-<input id="name">
+`<label for="name">Name</label>`
+`<input id="name">`
 
 OR
 
-<label>
-  Name <input type="text">
-</label>
+`<label>`
+  Name `<input type="text">`
+`</label>`
 
 Without labels:
 
@@ -204,14 +203,14 @@ Without labels:
 
 Q14. Select, Textarea, Button
 
-<select>
-  <option>Option 1</option>
-  <option>Option 2</option>
-</select>
+`<select>`
+  `<option>Option 1</option>`
+  `<option>Option 2</option>`
+`</select>`
 
-<textarea></textarea>
+`<textarea></textarea>`
 
-<button type="submit">Submit</button>
+`<button type="submit">Submit</button>`
 
 ---
 
@@ -226,7 +225,7 @@ Q15. Validation Attributes
 
 Example:
 
-<input type="text" required minlength="3" maxlength="10">
+`<input type="text" required minlength="3" maxlength="10">`
 
 ---
 
@@ -235,7 +234,7 @@ SECTION D: CSS BASICS
 Q16. CSS Methods
 
 - Inline → quick but messy
-- Internal → inside "<style>"
+- Internal → inside `<style>`
 - External → best practice (clean & reusable)
 
 ---
